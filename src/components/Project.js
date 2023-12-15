@@ -51,7 +51,7 @@ const projects = [
     description: "플레이명 저장, 게임 종료 후 재시작",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project6.png`,
-    deployedUrl: "https://example.com/project6"
+    deployedUrl: "https://noonkkot.github.io/tictactoe-game/"
   },
   {
     title: "PROJECT #7 좋아하는 장소",
