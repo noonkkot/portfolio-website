@@ -111,11 +111,16 @@ body {
   background-color: #eee;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
 
 #article .project>div.thumbnail img {
-  width: inherit;
-  object-fit: cover;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #article .project .description {
