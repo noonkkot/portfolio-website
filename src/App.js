@@ -9,7 +9,7 @@ import Home from './components/Home';
 function Header() {
   return (
     <header id="header">
-      <h1><Link to="/">Logo</Link></h1>
+      <h1><Link to="/">NOONKKOT</Link></h1>
       <nav id="nav">
         <ul>
           <li><Link to="/about">ABOUT</Link></li>
