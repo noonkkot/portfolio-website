@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -28,6 +29,7 @@ const transporter = nodemailer.createTransport({
     pass: gmailAppPassword,
   },
 });
+
 
 // 이메일 전송 엔드포인트
 app.post('/send-email', (req, res) => {
