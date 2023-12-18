@@ -16,7 +16,7 @@ function About() {
           <p>phone</p>
           <p>e-mail</p>
           <h4>CAREER</h4>
-          <p>book designer</p>
+          <p></p>
           <h4>SKILLS</h4>
           <span className="skill">#HTML</span>
           <span className="skill">#CSS</span>
@@ -25,7 +25,7 @@ function About() {
           <span className="skill">#Vue.js</span>
           <span className="skill">#SCSS</span>
           <h4>CERTIFICATE</h4>
-          <p></p>
+          <p>Craftsman Web Design</p>
         </div>
       </div>
     </article>

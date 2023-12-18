@@ -15,16 +15,16 @@ const projects = [
   },
   {
     title: "PROJECT #2 KMDb 한국영화 데이터베이스 검색 사이트",
-    techStack: ["#React.js", "#CSS", "#Javascript", "#RestAPI"],
-    description: "KMDb Open API를 활용한 검색 사이트로 전체검색과 영화제목, 감독, 배우를 엔드포인트로 한 검색이 가능하다.",
+    techStack: ["#React.js", "#CSS", "#RestAPI"],
+    description: "KMDb Open API를 활용한 검색 사이트이다. 전체검색을 기본값으로하며 영화제목, 감독, 배우를 엔드포인트로 한 상세검색이 가능하다.",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project2.png`,
-    deployedUrl: "https://verdant-torte-dbfc1d.netlify.app"
+    deployedUrl: "https://verdant-torte-dbfc1d.netlify.app/"
   },
   {
     title: "PROJECT #3 북 어드밴트 캘린더",
     techStack: ["#HTML", "#CSS", "#Javascript"],
-    description: "날짜를 기준으로 클릭할 경우 어떤 책인지 알 수 있으며 동시에 책 속 글귀가 플립되며 나타난다. 날짜가 지나지 않은 경우 공개까지 남은 일자를 알려준다.",
+    description: "클릭할 경우 책 표지를 확인할 수 있으며 책 속 글귀가 플립되며 나타난다. 날짜가 지나지 않은 경우 공개일까지 남은 일자를 알려준다.",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project3.png`,
     deployedUrl: "https://noonkkot.github.io/book-advent-calendar/"
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "PROJECT #4 바늘이야기 리뉴얼",
     techStack: ["#React.js", "#CSS", "#Swiper.js"],
-    description: "바늘이야기 쇼핑몰 리뉴얼 프로젝트이다. 구현 목표는 리액트를 사용하여 동적이고 사용자 친화적인 UI 설계이다.",
+    description: "바늘이야기 쇼핑몰 리뉴얼 프로젝트이다. 구현 목표는 리액트를 사용한 사용자 친화적인 UI 설계이다.",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project4.png`,
     deployedUrl: "https://playful-tulumba-cc37c6.netlify.app"
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "PROJECT #5 TEAM PROJECT 애플스토어 리뉴얼",
     techStack: ["#HTML", "#CSS", "#Javascript", "#Swiper.js"],
-    description: "플레이명 저장, 게임 종료 후 재시작",
+    description: "기존 애플스토어 리뉴얼 프로젝트이다. 팀 프로젝트로 메인 히어로 영역과 스페셜리트 영역을 맡았다.",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project5.png`,
     deployedUrl: "https://noonkkot.github.io/team-project-complete/"
@@ -48,7 +48,7 @@ const projects = [
   {
     title: "PROJECT #6 틱택토 게임",
     techStack: ["#HTML", "#CSS", "#Javascript"],
-    description: "플레이명 저장, 게임 종료 후 재시작",
+    description: "플레이명을 입력하고 게임 결과를 확인하고 재시작할 수 있다.",
     features: "추후 기입",
     image: `${process.env.PUBLIC_URL}/images/project6.png`,
     deployedUrl: "https://noonkkot.github.io/tictactoe-game/"
@@ -86,8 +86,8 @@ function ProjectItem({ project }) {
           ))}
           <h4>프로젝트 소개</h4>
           <p>{project.description}</p>
-          <h4>구현 기능</h4>
-          <p>{project.features}</p>
+          {/* <h4>구현 기능</h4> */}
+          {/* <p>{project.features}</p> */}
         </div>
       </div>
     </div>

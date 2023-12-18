@@ -117,7 +117,7 @@ body {
 
 #article .project>div.thumbnail img {
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -126,17 +126,26 @@ body {
 
 #article .project .description {
   width: 60%;
+  height: 40%;
   text-align: left;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 #article .project .description h3 {
+  padding-top: 1rem;
   font-size: 1.375rem;
 }
 
 #article .project .description h4 {
-  padding: 0.5rem 0 0.25rem;
+  padding: 0.5rem 0 0.5rem;
   font-weight: 600;
 } 
+
+#article .project .description span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
 
 /* swiper btn */
 .swiper-button-disabled {
