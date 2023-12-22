@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import AboutPage from './components/AboutPage';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import './App.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Header() {
   return (
@@ -36,16 +40,14 @@ function Footer() {
 function App() {
   return (
     <Router>
-      <div id="inner">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </div>
     </Router>
   );
 }

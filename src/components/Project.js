@@ -88,6 +88,7 @@ function ProjectItem({ project }) {
           <p>{project.description}</p>
           {/* <h4>구현 기능</h4> */}
           {/* <p>{project.features}</p> */}
+          <button>페이지로 이동하기</button>
         </div>
       </div>
     </div>
